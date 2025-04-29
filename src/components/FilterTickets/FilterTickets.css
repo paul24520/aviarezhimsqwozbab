@@ -1,0 +1,64 @@
+.filter-tickets {
+  height: 252px;
+  width: 232px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  color: #4a4a4a;
+  gap: 10px;
+  border-radius: 5px;
+}
+
+.filter-tickets__header {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  font-weight: 600;
+}
+
+.filter-item {
+  display: flex;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  gap: 10px;
+  position: relative;
+  
+}
+
+.filter-item:hover {
+  background-color: #F1FCFF;
+  cursor: pointer;
+}
+
+
+.custom-checkbox {
+  display: flex;
+  gap: 10px; 
+}
+
+.custom-checkbox:hover {
+
+}
+
+.custom-checkbox input[type="checkbox"] {
+  height: 0;
+}
+
+.custom-checkbox .checkmark {
+  width: 20px;
+  height: 20px;
+  background-image: url("../../../public/unchecked.svg");
+  background-size: cover;
+  margin-right: 8px;
+  vertical-align: middle;
+  transition: all 0.2s;
+}
+
+.checkbox {
+  width: 0;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .checkmark {
+  background-image: url("../../../public/checked.svg");
+}

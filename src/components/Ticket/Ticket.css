@@ -1,0 +1,53 @@
+.ticket{
+background-color: #FFFFFF;
+padding: 20px;
+border-radius: 5px;
+max-width: 502px;
+min-width: 500px;
+line-height: 21px;
+}
+
+.pricelogo {
+display: flex;
+justify-content: space-between;
+margin-bottom: 20px;
+}
+
+.pathFragment {
+    max-width: 140px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.price {
+    font-size: 24px;
+    color: #2196F3
+}
+
+.pathTo {
+margin-bottom: 10px;
+}
+
+
+
+.pathTo, .pathFrom {
+    display: flex;
+    gap: 50px;
+}
+
+.pathFragment span {
+    color: #A0B0B9;
+}
+
+.pathFragment span:last-child {
+    color: #4A4A4A;
+}
+
+@media all and (max-width: 510px) {
+    .ticket {
+        max-width: 100%;
+        min-width: none;
+    }
+}
+    
